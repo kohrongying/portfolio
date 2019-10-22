@@ -37,7 +37,7 @@ export const repos = [
   },
   {
     name: "Danang",
-    desc: "A video journey of my trip to Danang, Vietnam",
+    desc: "A picture journey of my trip to Danang, Vietnam",
     url: "https://kohrongying.github.io/danang/",
     github_url: "https://github.com/kohrongying/danang"
   },

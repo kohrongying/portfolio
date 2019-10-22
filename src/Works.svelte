@@ -3,10 +3,6 @@
 </script>
 
 <style>
-	#right-fixed {
-		width: 70vw;
-		float: right;
-	}
 	#card-container {
 		margin: 20px;
 		display: flex;
@@ -15,7 +11,7 @@
 		justify-content: space-between;
 	}
 	.card {
-		width: 40%;
+		width: 100%;
 		margin: 15px;
 		padding: 15px;
 		box-shadow: #cccccc63 1px 1px 6px 2px;
@@ -24,6 +20,27 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+	}
+	@media only screen and (min-width: 680px) {	
+		#right-fixed {
+			width: 70vw;
+			float: right;
+		}
+	}
+	@media only screen and (min-width: 900px) {	
+		.card {
+			width: 38%;
+		}
+	}
+	@media only screen and (min-width: 1000px) {	
+		.card {
+			width: 40%;
+		}
+	}
+	@media only screen and (min-width: 1380px) {	
+		.card {
+			width: 43%;
+		}
 	}
 </style>
 

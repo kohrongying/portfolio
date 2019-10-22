@@ -5,18 +5,20 @@
 <style>
 	#left-fixed {
 		background-color: salmon;
-		height: 100vh;
-		width: 30vw;
 		display: flex;
 		align-items: center;
 		justify-content: center;
 		flex-direction: column;
-		position: fixed;
+		margin: 20px;
+	}
+	#me {
+		padding-top: 50px;
 	}
 	#contactme {
 		display: flex;
 		align-items: center;
 		justify-content: space-around;
+		padding-bottom: 50px;
 	}
 	.contact-link {
 		width: 50px;
@@ -25,12 +27,21 @@
 		justify-content: center;
 		align-items: center;
 	}
-
+	@media only screen and (min-width: 680px) {	
+		#left-fixed {
+			height: calc(100vh - 40px);
+			width: 30vw;
+			position: fixed;
+		}
+	}
 </style>
 
 <section id="left-fixed">
-		<img {src} alt="pic" width=100 />
-		<div id="contactme">
+	<img id="me" {src} alt="pic" width=100 />
+	<div id="contactme">
+		<a class="contact-link" href="https://blog.rongying.co">
+			<img src="face-icon.png" alt='person' width=30 />
+		</a>
 		<a class="contact-link" href="https://github.com/kohrongying">
 			<img src="github-icon.png" alt='github' width=40 />
 		</a>
@@ -40,5 +51,5 @@
 		<a class="contact-link" href="https://sg.linkedin.com/in/rongyingkoh">
 			<img src="lnkedin-icon.png" alt='linkedin' width=30 />
 		</a>
-		</div>
-	</section>
+	</div>
+</section>
