@@ -298,7 +298,7 @@ var app = (function () {
     const file = "src/About.svelte";
 
     function create_fragment(ctx) {
-    	var section, img0, t0, div, a0, img1, t1, a1, img2, t2, a2, img3;
+    	var section, img0, t0, div, a0, img1, t1, a1, img2, t2, a2, img3, t3, a3, img4;
 
     	const block = {
     		c: function create() {
@@ -314,37 +314,49 @@ var app = (function () {
     			t2 = space();
     			a2 = element("a");
     			img3 = element("img");
+    			t3 = space();
+    			a3 = element("a");
+    			img4 = element("img");
+    			attr_dev(img0, "id", "me");
     			attr_dev(img0, "src", src);
     			attr_dev(img0, "alt", "pic");
     			attr_dev(img0, "width", "100");
-    			add_location(img0, file, 31, 2, 489);
-    			attr_dev(img1, "src", "github-icon.png");
-    			attr_dev(img1, "alt", "github");
-    			attr_dev(img1, "width", "40");
-    			add_location(img1, file, 34, 3, 614);
-    			attr_dev(a0, "class", "contact-link svelte-86mvx3");
-    			attr_dev(a0, "href", "https://github.com/kohrongying");
-    			add_location(a0, file, 33, 2, 548);
-    			attr_dev(img2, "src", "mail-icon.png");
-    			attr_dev(img2, "alt", "mail");
-    			attr_dev(img2, "width", "25");
-    			add_location(img2, file, 37, 3, 753);
-    			attr_dev(a1, "class", "contact-link svelte-86mvx3");
-    			attr_dev(a1, "href", "mailto:kohrongying@gmail.com?Subject=Hello");
-    			add_location(a1, file, 36, 2, 675);
-    			attr_dev(img3, "src", "lnkedin-icon.png");
-    			attr_dev(img3, "alt", "linkedin");
-    			attr_dev(img3, "width", "30");
-    			add_location(img3, file, 40, 3, 884);
-    			attr_dev(a2, "class", "contact-link svelte-86mvx3");
-    			attr_dev(a2, "href", "https://sg.linkedin.com/in/rongyingkoh");
-    			add_location(a2, file, 39, 2, 810);
+    			attr_dev(img0, "class", "svelte-3bmuwg");
+    			add_location(img0, file, 39, 1, 643);
+    			attr_dev(img1, "src", "face-icon.png");
+    			attr_dev(img1, "alt", "person");
+    			attr_dev(img1, "width", "30");
+    			add_location(img1, file, 42, 3, 769);
+    			attr_dev(a0, "class", "contact-link svelte-3bmuwg");
+    			attr_dev(a0, "href", "https://blog.rongying.co");
+    			add_location(a0, file, 41, 2, 709);
+    			attr_dev(img2, "src", "github-icon.png");
+    			attr_dev(img2, "alt", "github");
+    			attr_dev(img2, "width", "40");
+    			add_location(img2, file, 45, 3, 894);
+    			attr_dev(a1, "class", "contact-link svelte-3bmuwg");
+    			attr_dev(a1, "href", "https://github.com/kohrongying");
+    			add_location(a1, file, 44, 2, 828);
+    			attr_dev(img3, "src", "mail-icon.png");
+    			attr_dev(img3, "alt", "mail");
+    			attr_dev(img3, "width", "25");
+    			add_location(img3, file, 48, 3, 1033);
+    			attr_dev(a2, "class", "contact-link svelte-3bmuwg");
+    			attr_dev(a2, "href", "mailto:kohrongying@gmail.com?Subject=Hello");
+    			add_location(a2, file, 47, 2, 955);
+    			attr_dev(img4, "src", "lnkedin-icon.png");
+    			attr_dev(img4, "alt", "linkedin");
+    			attr_dev(img4, "width", "30");
+    			add_location(img4, file, 51, 3, 1164);
+    			attr_dev(a3, "class", "contact-link svelte-3bmuwg");
+    			attr_dev(a3, "href", "https://sg.linkedin.com/in/rongyingkoh");
+    			add_location(a3, file, 50, 2, 1090);
     			attr_dev(div, "id", "contactme");
-    			attr_dev(div, "class", "svelte-86mvx3");
-    			add_location(div, file, 32, 2, 525);
+    			attr_dev(div, "class", "svelte-3bmuwg");
+    			add_location(div, file, 40, 1, 686);
     			attr_dev(section, "id", "left-fixed");
-    			attr_dev(section, "class", "svelte-86mvx3");
-    			add_location(section, file, 30, 0, 461);
+    			attr_dev(section, "class", "svelte-3bmuwg");
+    			add_location(section, file, 38, 0, 616);
     		},
 
     		l: function claim(nodes) {
@@ -364,6 +376,9 @@ var app = (function () {
     			append_dev(div, t2);
     			append_dev(div, a2);
     			append_dev(a2, img3);
+    			append_dev(div, t3);
+    			append_dev(div, a3);
+    			append_dev(a3, img4);
     		},
 
     		p: noop,
@@ -429,7 +444,7 @@ var app = (function () {
       },
       {
         name: "Danang",
-        desc: "A video journey of my trip to Danang, Vietnam",
+        desc: "A picture journey of my trip to Danang, Vietnam",
         url: "https://kohrongying.github.io/danang/",
         github_url: "https://github.com/kohrongying/danang"
       },
@@ -457,7 +472,7 @@ var app = (function () {
     	return child_ctx;
     }
 
-    // (32:4) {#each repos as repo}
+    // (49:4) {#each repos as repo}
     function create_each_block(ctx) {
     	var div1, div0, a0, t0_value = ctx.repo.name + "", t0, t1, a1, img, t2, span, t3_value = ctx.repo.desc + "", t3, t4;
 
@@ -475,18 +490,18 @@ var app = (function () {
     			t3 = text(t3_value);
     			t4 = space();
     			attr_dev(a0, "href", ctx.repo.url);
-    			add_location(a0, file$1, 36, 10, 602);
+    			add_location(a0, file$1, 53, 10, 892);
     			attr_dev(img, "src", "github-icon.png");
     			attr_dev(img, "alt", "github");
     			attr_dev(img, "width", "40");
-    			add_location(img, file$1, 40, 14, 714);
+    			add_location(img, file$1, 57, 14, 1004);
     			attr_dev(a1, "href", ctx.repo.github_url);
-    			add_location(a1, file$1, 39, 12, 673);
-    			attr_dev(div0, "class", "title-container svelte-vu5fsj");
-    			add_location(div0, file$1, 34, 8, 561);
-    			add_location(span, file$1, 43, 8, 806);
-    			attr_dev(div1, "class", "card svelte-vu5fsj");
-    			add_location(div1, file$1, 32, 6, 533);
+    			add_location(a1, file$1, 56, 12, 963);
+    			attr_dev(div0, "class", "title-container svelte-1oetzmb");
+    			add_location(div0, file$1, 51, 8, 851);
+    			add_location(span, file$1, 60, 8, 1096);
+    			attr_dev(div1, "class", "card svelte-1oetzmb");
+    			add_location(div1, file$1, 49, 6, 823);
     		},
 
     		m: function mount(target, anchor) {
@@ -511,7 +526,7 @@ var app = (function () {
     			}
     		}
     	};
-    	dispatch_dev("SvelteRegisterBlock", { block, id: create_each_block.name, type: "each", source: "(32:4) {#each repos as repo}", ctx });
+    	dispatch_dev("SvelteRegisterBlock", { block, id: create_each_block.name, type: "each", source: "(49:4) {#each repos as repo}", ctx });
     	return block;
     }
 
@@ -535,11 +550,11 @@ var app = (function () {
     				each_blocks[i].c();
     			}
     			attr_dev(div, "id", "card-container");
-    			attr_dev(div, "class", "svelte-vu5fsj");
-    			add_location(div, file$1, 30, 2, 475);
+    			attr_dev(div, "class", "svelte-1oetzmb");
+    			add_location(div, file$1, 47, 2, 765);
     			attr_dev(section, "id", "right-fixed");
-    			attr_dev(section, "class", "svelte-vu5fsj");
-    			add_location(section, file$1, 29, 0, 446);
+    			attr_dev(section, "class", "svelte-1oetzmb");
+    			add_location(section, file$1, 46, 0, 736);
     		},
 
     		l: function claim(nodes) {
