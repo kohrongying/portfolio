@@ -43,7 +43,7 @@ export const repos = [
   },
   {
     name: "Spotlight",
-    desc: "A fully CSS solution that creates new insight when you hover over the picture.",
+    desc: "A CSS solution that creates new insight when you hover over the picture.",
     url: "https://kohrongying.github.io/spotlight/",
     github_url: "https://github.com/kohrongying/spotlight"
   },
