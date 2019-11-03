@@ -33,8 +33,8 @@ a.site-link {
 	box-shadow: 0 2px 0 var(--color-text);
 }
 a.site-link:hover {
-	color: salmon;
-	box-shadow: 0 2px 0 salmon;
+	color: mediumturquoise;
+	box-shadow: 0 2px 0 mediumturquoise;
 }
 
 a:hover {

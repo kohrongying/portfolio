@@ -4,7 +4,7 @@
 
 <style>
 	#left-fixed {
-		background-color: salmon;
+		background-color: mediumturquoise;
 		display: flex;
 		align-items: center;
 		justify-content: center;
