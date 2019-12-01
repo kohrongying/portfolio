@@ -12,6 +12,12 @@ export const repos = [
     github_url: "https://github.com/kohrongying/telegram-news-bot"
   },
   {
+    name: "Pokeipsum",
+    desc: "A Pokemon x Lorem Ipsum npm package",
+    url: "https://www.npmjs.com/package/pokeipsum",
+    github_url: "https://github.com/kohrongying/pokeipsum"
+  },
+  {
     name: "Hex 2 RGB",
     desc: "Convert rgba to hex (with transparency support)",
     url: "https://kohrongying.github.io/hex-to-rgba/",
@@ -22,6 +28,12 @@ export const repos = [
     desc: "A python CLI tool to generate avatar sprites",
     url: "https://github.com/kohrongying/avatar-generator",
     github_url: "https://github.com/kohrongying/avatar-generator"
+  },
+  {
+    name: "Rails React Crash Course",
+    desc: "A crash course into a full stack",
+    url: "https://github.com/kohrongying/react-rails-crashcourse/tree/master/tutorial",
+    github_url: "https://github.com/kohrongying/react-rails-crashcourse"
   },
   {
     name: "CSS Battle",

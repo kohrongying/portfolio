@@ -9,7 +9,6 @@
 		align-items: center;
 		justify-content: center;
 		flex-direction: column;
-		margin: 20px;
 	}
 	#me {
 		padding-top: 50px;
@@ -26,13 +25,6 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-	}
-	@media only screen and (min-width: 680px) {	
-		#left-fixed {
-			height: calc(100vh - 40px);
-			width: 30vw;
-			position: fixed;
-		}
 	}
 </style>
 
