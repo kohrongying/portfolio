@@ -18,6 +18,18 @@ export const repos = [
     github_url: "https://github.com/kohrongying/pokeipsum"
   },
   {
+    name: "Mahjong Score Webapp",
+    desc: "A handy webapp for mahjong tables",
+    url: "https://kohrongying.github.io/mahjong-score-app",
+    github_url: "https://github.com/kohrongying/mahjong-score-app"
+  },
+  {
+    name: "Offtrack Map Reveal",
+    desc: "A CSS Grid inspired project to keep track of game outcomes",
+    url: "https://kohrongying.github.io/offtrack-map-reveal",
+    github_url: "https://github.com/kohrongying/offtrack-map-reveal"
+  },
+  {
     name: "Hex 2 RGB",
     desc: "Convert rgba to hex (with transparency support)",
     url: "https://kohrongying.github.io/hex-to-rgba/",
