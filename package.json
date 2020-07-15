@@ -2,23 +2,18 @@
   "name": "svelte-app",
   "version": "1.0.0",
   "devDependencies": {
-    "npm-run-all": "^4.1.5",
-    "rollup": "^1.12.0",
-    "rollup-plugin-commonjs": "^10.0.0",
-    "rollup-plugin-livereload": "^1.0.0",
-    "rollup-plugin-node-resolve": "^5.2.0",
-    "rollup-plugin-svelte": "^5.0.3",
-    "rollup-plugin-terser": "^4.0.4",
-    "svelte": "^3.12.1"
+    "@snowpack/app-scripts-svelte": "^1.6.0-alpha.0",
+    "@testing-library/jest-dom": "^5.5.0",
+    "@testing-library/svelte": "^3.0.0",
+    "jest": "^25.4.0",
+    "snowpack": "^2.6.4"
   },
   "dependencies": {
-    "sirv-cli": "^0.4.4"
+    "svelte": "^3.21.0"
   },
   "scripts": {
-    "build": "rollup -c",
-    "autobuild": "rollup -c -w",
-    "dev": "run-p start:dev autobuild",
-    "start": "sirv docs --single",
-    "start:dev": "sirv docs --single --dev"
+    "start": "snowpack dev",
+    "build": "snowpack build",
+    "test": "jest"
   }
 }
