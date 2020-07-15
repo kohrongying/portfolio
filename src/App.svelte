@@ -1,4 +1,6 @@
 <script>
+	import TailwindStyles from './TailwindStyles.svelte';
+
 	import About from './About.svelte'
 	import Works from './Works.svelte';
 </script>
