@@ -142,7 +142,7 @@ a:hover {
 	
 	<div class="w-full lg:w-2/3 p-20">
 		<div class="section-title pb-8">Leave a message</div>
-    <form class="w-full" name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true">
+    <form class="w-full" name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true" action="/thankyou">
       <p class="hidden">
         <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
       </p>
@@ -151,21 +151,21 @@ a:hover {
         <label class="form-label" for="name">
           Name
         </label>
-        <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="name" type="text" placeholder="Name">
+        <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" name="name" type="text" placeholder="Name">
       </div>
 
       <div class="mb-6">
         <label class="form-label" for="email">
           Email
         </label>
-        <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="email" type="email" placeholder="example@abc.sg">
+        <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" name="email" type="email" placeholder="example@abc.sg">
       </div>
 
       <div class="mb-6">
         <label class="form-label" for="message">
           Message
         </label>
-        <textarea class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="message" placeholder="Say what you wanna say!"></textarea>
+        <textarea class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" name="message" placeholder="Say what you wanna say!"></textarea>
       </div>
 
       <button class="my-btn" type="submit">Send</button>
