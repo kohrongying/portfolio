@@ -57,18 +57,39 @@ const toggle = () => {
   background-size: cover;
   background-position: right;
 }
+
+a:hover {
+  border-color: var(--color);
+}
+
+.my-link {
+  @apply border-transparent border-solid border-b-2;
+}
+
+.section-title {
+  @apply text-4xl font-bold leading-tight;
+}
+
+.form-label {
+ @apply block uppercase tracking-wide text-gray-500 text-xs font-bold mb-2;
+}
+
+.my-btn {
+  @apply bg-white text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow;
+}
+
 </style>
 
 <section id="hero" class=" bg-gray-100 flex flex-col">
   <ul class="flex p-8 justify-end">
     <li class="mr-6 ">
-      <a class="hover:border-black border-transparent border-solid border-b-2" href="https://blog.rongying.co/">Blog</a>
+      <a class="my-link" href="https://blog.rongying.co/">Blog</a>
     </li>
     <li class="mr-6">
-      <a class="hover:border-black border-transparent border-solid border-b-2" href="#contact">Contact</a>
+      <a class="my-link" href="#contact">Contact</a>
     </li>
     <li class="mr-6">
-      <a class="hover:border-black border-transparent border-solid border-b-2" href="#about">About</a>
+      <a class="my-link" href="#about">About</a>
     </li>
 
     <li class="mr-6">
@@ -101,16 +122,16 @@ const toggle = () => {
 	<div class="w-full lg:w-1/2 bg-image h-64 lg:h-auto"></div>
 	
 	<div class="w-full lg:w-1/2 p-20 md:p-24 lg:p-32">
-		<div class="text-4xl font-bold leading-tight">New phone. Who dis?</div>
+		<div class="section-title">New phone. Who dis?</div>
 		<div class="text-2xl pt-8">She/her. A frontend software person. Singapore.</div>
 	</div>
 </section>
 
 <section id="portfolio" class="flex flex-wrap mt-16 flex-col-reverse lg:flex-row">
 	<div class="w-full lg:w-1/2 p-20 md:p-24 lg:p-32">
-		<div class="text-4xl font-bold">I like building web products</div>
+		<div class="section-title">I like building web products</div>
 		<div class="text-2xl py-8">React. Svelte. Flutter. Firebase. Deno.</div>
-    <button class="bg-white hover:bg-gray-100 text-gray-800 elevated font-semibold py-2 px-4 border border-gray-400 rounded shadow">View portfolio</button>
+    <button class="my-btn">View portfolio</button>
 	</div>
 
   <div class="bg-image w-full lg:w-1/2 h-64 lg:h-auto"></div>
@@ -120,30 +141,30 @@ const toggle = () => {
 	<div class="bg-image w-full lg:w-1/3 h-64 lg:h-auto"></div>
 	
 	<div class="w-full lg:w-2/3 p-20">
-		<div class="text-4xl font-bold pb-8">Leave a message</div>
-    <form class="w-full">
+		<div class="section-title pb-8">Leave a message</div>
+    <form class="w-full" name="contact" netlify>
        <div class="mb-6">
-        <label class="block uppercase tracking-wide text-gray-500 text-xs font-bold mb-2" for="name">
+        <label class="form-label" for="name">
           Name
         </label>
-        <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="name" placeholder="Name">
+        <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="name" type="text" placeholder="Name">
       </div>
 
       <div class="mb-6">
-        <label class="block uppercase tracking-wide text-gray-500 text-xs font-bold mb-2" for="email">
+        <label class="form-label" for="email">
           Email
         </label>
         <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="email" type="email" placeholder="example@abc.sg">
       </div>
 
       <div class="mb-6">
-        <label class="block uppercase tracking-wide text-gray-500 text-xs font-bold mb-2" for="message">
+        <label class="form-label" for="message">
           Message
         </label>
         <textarea class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="message" placeholder="Say what you wanna say!"></textarea>
       </div>
 
-      <button class="bg-white hover:bg-gray-100 text-gray-800 elevated font-semibold py-2 px-4 border border-gray-400 rounded shadow" type="submit">Send</button>
+      <button class="my-btn" type="submit">Send</button>
 
     </form>
 	</div>
@@ -151,14 +172,14 @@ const toggle = () => {
 
 <section id="footer" class="flex flex-wrap px-20 mt-20 mb-10">
   <div class="w-full md:w-1/4 mb-10">
-		<div class="text-4xl font-bold">Ok. Bye now.</div>
+		<div class="section-title">Ok. Bye now.</div>
 	</div>
 
   <div class="w-full md:w-3/4 flex flex-row justify-between items-center md:pl-16 mb-10">
-    <a class="hover:border-black border-transparent border-solid border-b-2" href="https://github.com/kohrongying">github</a>
-    <a class="hover:border-black border-transparent border-solid border-b-2" href="https://twitter.com/RongRunBuild">twitter</a>
-    <a class="hover:border-black border-transparent border-solid border-b-2" href="https://sg.linkedin.com/in/rongyingkoh">linkedin</a>
-    <a class="hover:border-black border-transparent border-solid border-b-2" href="https://codepen.io/kohrongying">codepen</a>
-    <a class="hover:border-black border-transparent border-solid border-b-2" href="https://blog.rongying.co/">blog</a>
+    <a class="my-link" href="https://github.com/kohrongying">github</a>
+    <a class="my-link" href="https://twitter.com/RongRunBuild">twitter</a>
+    <a class="my-link" href="https://sg.linkedin.com/in/rongyingkoh">linkedin</a>
+    <a class="my-link" href="https://codepen.io/kohrongying">codepen</a>
+    <a class="my-link" href="https://blog.rongying.co/">blog</a>
   </div>
 </section>
