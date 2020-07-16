@@ -142,7 +142,11 @@ a:hover {
 	
 	<div class="w-full lg:w-2/3 p-20">
 		<div class="section-title pb-8">Leave a message</div>
-    <form class="w-full" name="contact" netlify>
+    <form class="w-full" name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true">
+      <p class="hidden">
+        <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+      </p>
+
        <div class="mb-6">
         <label class="form-label" for="name">
           Name
