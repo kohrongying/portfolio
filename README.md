@@ -19,3 +19,12 @@ npm run build
 
 ## Deploying
 Deployed on Netlify
+
+
+## Notes
+
+![revamped](portfolio_2019.png)
+
+Updated old website
+- Added Snowpack, Tailwind CSS. 
+- Added dark mode toggle
