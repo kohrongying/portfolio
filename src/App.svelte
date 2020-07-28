@@ -46,7 +46,7 @@ const toggle = () => {
 }
 
 #portfolio .bg-image {
-	background-image: url('works.png');
+	background-image: url('works.jpg');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -95,7 +95,7 @@ a:hover {
     <li class="mr-6">
     {#if isDarkMode}
       <!-- Show sun -->
-      <button on:click={toggle}>
+      <button on:click={toggle} aria-label="darkmode toggle">
         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-sun" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" fill="none" stroke-linecap="round" stroke-linejoin="round">
           <path stroke="none" d="M0 0h24v24H0z"/>
           <circle cx="12" cy="12" r="4" />
@@ -105,7 +105,7 @@ a:hover {
       
     {:else}
     <!-- Show moon -->
-    <button on:click={toggle}>
+    <button on:click={toggle} aria-label="darkmode-toggle">
     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-moon" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
         <path stroke="none" d="M0 0h24v24H0z"/>
         <path d="M16.2 4a9.03 9.03 0 1 0 3.9 12a6.5 6.5 0 1 1 -3.9 -12" />
@@ -121,29 +121,29 @@ a:hover {
 	<div class="max-w-screen-xl mx-auto w-full text-center md:text-left px-20 text-4xl md:text-5xl lg:text-6xl font-black leading-tight">Hello you've reached<br> Rong Ying</div>
 </section>
 
-<section id="about" class="max-w-screen-xl mx-auto flex flex-wrap mt-16">
+<section id="about" class="max-w-screen-xl mx-auto flex flex-wrap my-8">
 	<div class="w-full lg:w-1/2 bg-image h-64 lg:h-auto"></div>
 	
-	<div class="w-full lg:w-1/2 p-20 md:p-24 lg:p-32">
+	<div class="w-full lg:w-1/2 px-10 py-20 md:p-24 lg:p-32">
 		<div class="section-title">New phone. Who dis?</div>
 		<div class="text-2xl pt-8">She/her. A frontend software person. Singapore.</div>
 	</div>
 </section>
 
-<section id="portfolio" class="max-w-screen-xl mx-auto flex flex-wrap mt-16 flex-col-reverse lg:flex-row">
-	<div class="w-full lg:w-1/2 p-20 md:p-24 lg:p-32">
+<section id="portfolio" class="max-w-screen-xl mx-auto flex flex-wrap my-8 flex-col-reverse lg:flex-row">
+	<div class="w-full lg:w-1/2 px-10 py-20 md:p-24 lg:p-32">
 		<div class="section-title">I like building web products</div>
-		<div class="text-2xl py-8">React. Svelte. Flutter. Firebase. Deno.</div>
-    <button class="my-btn">Portfolio coming soon</button>
+		<div class="text-2xl py-8">React. Svelte. Flutter. Firebase.</div>
+    <button aria-label="Portfolio link" class="my-btn">Portfolio coming soon</button>
 	</div>
 
   <div class="bg-image w-full lg:w-1/2 h-64 lg:h-auto"></div>
 </section>
 
-<section id="contact" class="max-w-screen-xl mx-auto flex flex-wrap mt-16">
+<section id="contact" class="max-w-screen-xl mx-auto flex flex-wrap my-8">
 	<div class="bg-image w-full lg:w-1/3 h-64 lg:h-auto"></div>
 	
-	<div class="w-full lg:w-2/3 p-20">
+	<div class="w-full lg:w-2/3 px-10 py-20 md:p-20">
 		<div class="section-title pb-8">Leave a message</div>
     <form name="contact-form" method="POST" netlify-honeypot="bot-field" netlify>
       <input type="hidden" name="form-name" value="contact-form" />
@@ -156,30 +156,30 @@ a:hover {
         <label class="form-label" for="name">
           Name
         </label>
-        <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" name="name" type="text" placeholder="Name">
+        <input id="name" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" name="name" type="text" placeholder="Name">
       </div>
 
       <div class="mb-6">
         <label class="form-label" for="email">
           Email
         </label>
-        <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" name="email" type="email" placeholder="example@abc.sg">
+        <input id="email" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" name="email" type="email" placeholder="example@abc.sg">
       </div>
 
       <div class="mb-6">
         <label class="form-label" for="message">
           Message
         </label>
-        <textarea class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" name="message" placeholder="Say what you wanna say!"></textarea>
+        <textarea id="message" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" name="message" placeholder="Say what you wanna say!"></textarea>
       </div>
 
-      <button class="my-btn" type="submit">Send</button>
+      <button aria-label="submit form" class="my-btn" type="submit">Send</button>
 
     </form>
 	</div>
 </section>
 
-<section id="footer" class="max-w-screen-xl mx-auto flex flex-wrap px-20 mt-20 mb-10">
+<section id="footer" class="max-w-screen-xl mx-auto flex flex-wrap px-10 md:px-20 mt-20 mb-10">
   <div class="w-full md:w-1/4 mb-10">
 		<div class="section-title">Ok. Bye now.</div>
 	</div>
