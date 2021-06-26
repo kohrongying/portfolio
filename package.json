@@ -2,21 +2,18 @@
   "name": "svelte-app",
   "version": "1.0.0",
   "devDependencies": {
-    "@snowpack/app-scripts-svelte": "^1.6.0-alpha.0",
-    "@testing-library/jest-dom": "^5.5.0",
-    "@testing-library/svelte": "^3.0.0",
-    "autoprefixer": "^9.8.5",
-    "jest": "^25.4.0",
-    "snowpack": "^2.6.4",
-    "svelte-preprocess": "^4.0.8"
+    "@snowpack/plugin-svelte": "^3.7.0",
+    "autoprefixer": "^10.2.6",
+    "snowpack": "^3.3.7",
+    "svelte-preprocess": "^4.7.3"
   },
   "dependencies": {
-    "svelte": "^3.21.0",
-    "tailwindcss": "^1.4.6"
+    "svelte": "^3.38.0",
+    "tailwindcss": "^2.2.4"
   },
   "scripts": {
     "start": "snowpack dev",
     "build": "snowpack build",
-    "test": "jest"
+    "test": "echo \"This template does not include a test runner by default.\" && exit 1"
   }
 }
