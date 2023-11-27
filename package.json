@@ -8,7 +8,7 @@
     "svelte-preprocess": "^4.7.3"
   },
   "dependencies": {
-    "svelte": "^3.38.0",
+    "svelte": "^3.49.0",
     "tailwindcss": "^2.2.4"
   },
   "scripts": {
