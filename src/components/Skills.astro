@@ -1,0 +1,77 @@
+---
+const skillCategories = [
+  {
+    title: "Frontend",
+    icon: "🎨",
+    skills: ["React", "TypeScript", "HTML / CSS", "Astro", "Next.js", "Vue"],
+  },
+  {
+    title: "Backend",
+    icon: "⚙️",
+    skills: ["Java", "Python", "Typescript", "REST APIs", "SQL", "NoSQL"],
+  },
+  {
+    title: "DevOps & Tools",
+    icon: "🛠️",
+    skills: [
+      "Git",
+      "Docker",
+      "CI / CD",
+      "AWS",
+      "Google Cloud",
+      "Azure",
+      "Terraform / AWS CDK",
+      "Linux",
+      "Prompt Engineering"
+    ],
+  },
+  {
+    title: "Practices",
+    icon: "📚",
+    skills: [
+      "Clean Code",
+      "Test Driven Development",
+      "Domain Driven Development",
+      "Agile",
+      "Documentation",
+      "Mentoring",
+      "AI & LLM"
+    ],
+  },
+];
+---
+
+<section id="skills" class="py-24 px-6 bg-white">
+  <div class="container mx-auto max-w-6xl">
+    <div class="text-center mb-16">
+      <h2 class="text-4xl md:text-5xl font-bold mb-4">
+        Skills & <span class="gradient-text">Expertise</span>
+      </h2>
+      <p class="text-slate-600 text-lg">
+        Technologies and practices I work with
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-8">
+      {
+        skillCategories.map((category) => (
+          <div class="bg-gradient-to-br from-slate-50 to-white p-8 rounded-2xl border border-slate-200">
+            <div class="flex items-center gap-3 mb-6">
+              <span class="text-4xl">{category.icon}</span>
+              <h3 class="text-2xl font-bold text-slate-900">
+                {category.title}
+              </h3>
+            </div>
+            <div class="flex flex-wrap gap-3">
+              {category.skills.map((skill) => (
+                <span class="px-4 py-2 bg-white border border-primary/20 text-slate-700 rounded-lg font-medium hover:bg-gradient-to-r hover:from-primary hover:to-secondary hover:text-white transition-all duration-300">
+                  {skill}
+                </span>
+              ))}
+            </div>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>

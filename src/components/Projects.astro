@@ -1,0 +1,76 @@
+---
+const projects = [
+  {
+    title: "Blog Platform",
+    description: "Personal tech blog where I share insights, tutorials, and experiences in software development.",
+    tech: ["Writing", "Tech", "Tutorials"],
+    link: "https://blog.rongying.co",
+    icon: "✍️"
+  },
+  {
+    title: "Excretion Telegram Bot",
+    description: "Building a Telegram Bot using serverless functions ",
+    tech: ["Telegram API", "DynamoDB", "AWS Lambda"],
+    link: "https://blog.rongying.co/posts/2026/02/documenting-poop-frequency-for-health-reasons",
+    icon: "🌟"
+  },
+  {
+    title: "Everything Tracker",
+    description: "Track expenses, exercise, food in one webapp. TBD",
+    tech: ["Svelte", "Python", "AWS"],
+    link: "https://github.com/kohrongying/everything-tracker",
+    icon: "🚀"
+  },
+];
+---
+
+<section id="projects" class="py-24 px-6">
+  <div class="container mx-auto max-w-6xl">
+    <div class="text-center mb-16">
+      <h2 class="text-4xl md:text-5xl font-bold mb-4">
+        Featured <span class="gradient-text">Work</span>
+      </h2>
+      <p class="text-slate-600 text-lg">Some of my notable contributions</p>
+    </div>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {projects.map((project) => (
+        <a
+          href={project.link}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="group card-hover bg-white p-8 rounded-2xl border border-slate-200 block"
+        >
+          <div class="text-5xl mb-4">{project.icon}</div>
+          <h3 class="text-2xl font-bold mb-3 text-slate-900 group-hover:gradient-text transition-all">
+            {project.title}
+          </h3>
+          <p class="text-slate-600 mb-6 leading-relaxed">
+            {project.description}
+          </p>
+          <div class="flex flex-wrap gap-2">
+            {project.tech.map((tech) => (
+              <span class="px-3 py-1 bg-gradient-to-r from-primary/10 to-secondary/10 text-primary text-sm rounded-full font-medium">
+                {tech}
+              </span>
+            ))}
+          </div>
+        </a>
+      ))}
+    </div>
+
+    <div class="text-center mt-12">
+      <a
+        href="https://github.com/kohrongying?tab=repositories"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="inline-flex items-center gap-2 text-primary hover:text-secondary font-semibold transition-colors"
+      >
+        View All Projects
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+        </svg>
+      </a>
+    </div>
+  </div>
+</section>

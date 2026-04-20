@@ -1,7 +1,7 @@
 # Portfolio
 ---
 
-Built with [Svelte](https://svelte.dev), Snowpack and TailwindCSS
+Built with Astro and TailwindCSSv4
 
 ## Get started
 
@@ -10,9 +10,7 @@ Install the dependencies...
 ```bash
 npm install
 
-npm start
-
-npm test
+npm run dev
 
 npm run build
 ```
@@ -22,7 +20,8 @@ Deployed on Netlify
 
 
 ## Notes
-![new](portfolio_2020.png)
+![new](portfolio_2020.png) - Built with [Svelte](https://svelte.dev), Snowpack and TailwindCSS
+
 ![revamped](portfolio_2019.png)
 
 Updated old website
