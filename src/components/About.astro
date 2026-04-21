@@ -1,43 +1,41 @@
 ---
+import Section from "../layouts/Section.astro";
 ---
 
-<section id="about" class="py-24 px-6 bg-white">
-  <div class="container mx-auto max-w-6xl">
-    <div class="text-center mb-16">
-      <h2 class="text-4xl md:text-5xl font-bold mb-4">
-        About <span class="gradient-text">Me</span>
-      </h2>
-      <p class="text-slate-600 text-lg">Get to know me better</p>
+<Section anchorId="about" title="About Me" subtitle="A little about me">
+
+  <div class="grid md:grid-cols-3 gap-8">
+    <div
+      class="card-hover bg-gradient-to-br from-indigo-50 to-purple-50 p-8 rounded-2xl border border-indigo-100"
+    >
+      <div class="text-4xl mb-4">👩‍💻</div>
+      <h3 class="text-xl font-bold mb-3 text-slate-900">Developer</h3>
+      <p class="text-slate-600">
+        Passionate about crafting elegant solutions to complex problems. I
+        thrive on learning new technologies and building things that matter.
+      </p>
     </div>
 
-    <div class="grid md:grid-cols-3 gap-8">
-      <div class="card-hover bg-gradient-to-br from-indigo-50 to-purple-50 p-8 rounded-2xl border border-indigo-100">
-        <div class="text-4xl mb-4">👩‍💻</div>
-        <h3 class="text-xl font-bold mb-3 text-slate-900">Developer</h3>
-        <p class="text-slate-600">
-          Passionate about crafting elegant solutions to complex problems. I thrive on learning new technologies
-          and building things that matter.
-        </p>
-      </div>
-
-      <div class="card-hover bg-gradient-to-br from-pink-50 to-rose-50 p-8 rounded-2xl border border-pink-100">
-        <div class="text-4xl mb-4">🙌🏻</div>
-        <h3 class="text-xl font-bold mb-3 text-slate-900">Collaborator</h3>
-        <p class="text-slate-600">
-          I believe great products are built by great teams. I love sharing knowledge and working together
-          to achieve amazing results.
-        </p>
-      </div>
-
-      <div class="card-hover bg-gradient-to-br from-amber-50 to-orange-50 p-8 rounded-2xl border border-amber-100">
-        <div class="text-4xl mb-4">😯</div>
-        <h3 class="text-xl font-bold mb-3 text-slate-900">Curious Mind</h3>
-        <p class="text-slate-600">
-          Always exploring, always questioning. I'm driven by curiosity and the desire to understand
-          how things work under the hood.
-        </p>
-      </div>
+    <div
+      class="card-hover bg-gradient-to-br from-pink-50 to-rose-50 p-8 rounded-2xl border border-pink-100"
+    >
+      <div class="text-4xl mb-4">🙌🏻</div>
+      <h3 class="text-xl font-bold mb-3 text-slate-900">Collaborator</h3>
+      <p class="text-slate-600">
+        I believe great products are built by great teams. I love sharing
+        knowledge and working together to achieve amazing results.
+      </p>
     </div>
 
+    <div
+      class="card-hover bg-gradient-to-br from-amber-50 to-orange-50 p-8 rounded-2xl border border-amber-100"
+    >
+      <div class="text-4xl mb-4">😯</div>
+      <h3 class="text-xl font-bold mb-3 text-slate-900">Curious Mind</h3>
+      <p class="text-slate-600">
+        Always exploring, always questioning. I'm driven by curiosity and the
+        desire to understand how things work under the hood.
+      </p>
+    </div>
   </div>
-</section>
+</Section>

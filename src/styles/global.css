@@ -6,3 +6,5 @@
   --color-border: hsl(var(--border));
   --font-sans: 'Inter', system-ui, sans-serif;
 }
+
+@custom-variant dark (&:where(.dark, .dark *));
