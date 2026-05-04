@@ -24,6 +24,7 @@ const {
       const theme = localStorage.getItem('theme') ?? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
       document.documentElement.classList.toggle('dark', theme === 'dark');
     </script>
+    <script defer src="https://cloud.umami.is/script.js" data-website-id="7d8f405f-5e50-425d-96a0-3fdca9fe8c03"></script>
   </head>
   <body>
     <slot />
